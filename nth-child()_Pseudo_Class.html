@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* ul li:nth-child(1){          
+                background-color: orange;
+            } */                                /* Sadece belirlediğimize işlem yapacak*/
+            /* ul li:nth-child(n+1):nth-last-child(n+5){
+                background-color: orange;
+            } */      /* Birlikte kullanarak sondan sınırlandırdık*/
+            ul li:nth-child(2n+1){
+                background-color: red;
+            }   /*Kardeş elemenleri sayar fakat style uygulamaz*/
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <label>X</label>
+            <li>C</li>
+            <li>D</li>
+            <label>X</label>
+            <li>E</li>
+            <li>F</li>
+            <label>X</label>
+            <li>G</li>
+            <li>H</li>
+            <li>J</li>
+        </ul>
+    </body>
+</html>
